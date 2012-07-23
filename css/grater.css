@@ -1,0 +1,66 @@
+/* line 1, ../_sass/grater.scss */
+div.grater-container {
+  width: 640px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 660px) {
+  /* line 1, ../_sass/grater.scss */
+  div.grater-container {
+    width: 300px;
+  }
+}
+/* line 1, ../_sass/grater.scss */
+div.grater {
+  zoom: 1;
+}
+
+/* line 1, ../_sass/grater.scss */
+div.grater > div {
+  width: 300px;
+  margin: 0 0 2em;
+}
+
+/* line 1, ../_sass/grater.scss */
+div.grater > div:first-child {
+  float: left;
+}
+
+/* line 1, ../_sass/grater.scss */
+div.grater > div:last-child {
+  float: right;
+}
+
+/* line 1, ../_sass/grater.scss */
+div.grater.reverse > div:first-child {
+  float: right;
+}
+
+/* line 1, ../_sass/grater.scss */
+div.grater.reverse > div:last-child {
+  float: left;
+}
+
+/* line 1, ../_sass/grater.scss */
+div.grater:before, div.grater:after {
+  content: "";
+  display: table;
+}
+
+/* line 1, ../_sass/grater.scss */
+div.grater:after {
+  clear: both;
+}
+
+@media all and (max-width: 660px) {
+  /* line 1, ../_sass/grater.scss */
+  div.grater {
+    margin-bottom: 1em;
+  }
+
+  /* line 1, ../_sass/grater.scss */
+  div.grater > div {
+    float: none !important;
+    margin: 0 auto 2em;
+  }
+}

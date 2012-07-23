@@ -1,0 +1,96 @@
+@import "compass";
+@import "screen";
+@import "print";
+@import "ie";
+@import "grater";
+@import "colours";
+
+// Debug
+* {
+//  border: 1px solid red !important;
+}
+
+@font-face {
+    font-family: 'VagRounded';
+    src: url('fonts/vaground-webfont.eot');
+    src: url('fonts/vaground-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vaground-webfont.woff') format('woff'),
+         url('fonts/vaground-webfont.ttf') format('truetype'),
+         url('fonts/vaground-webfont.svg#WebfontRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+img.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.strapline {
+  text-align: center;
+}
+
+.section {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+h1 {
+  color: $blue;
+  font-family: "VagRounded";
+}
+p {
+  font-size: 12px;
+}
+strong {
+  color: $blue;
+  font-family: "VagRounded"
+}
+
+header {
+  margin-top: 1em;
+	margin-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+  h1 {
+    font-family: 'VagRounded';
+    font-size: 16px;
+    float:left;
+    a {
+      color: #000;
+      text-decoration: none;
+      &:visited {
+        color: #000;
+      }
+      &:hover {
+        color: #000;
+      }
+    }
+ 
+  }
+  ul.nav {
+    margin-top: 2px;
+    margin-bottom: 0;
+    float: right;
+    li {
+      display: inline;
+      padding-left: 20px;
+    }
+    a {
+      color: #666;
+      font-size: 12px;
+      text-decoration: none;
+      &:hover {
+        color: #999;
+      }
+    }
+  }
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  font-size: 10px;
+  color: #999;
+  text-align: center;
+}
